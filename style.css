@@ -1,0 +1,421 @@
+
+/* ==========================================
+   GENERAL WEBSITE DESIGN
+========================================== */
+
+/* Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main website background and font */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F7F5F0;
+    color: #34495E;
+    line-height: 1.7;
+}
+
+/* Remove underline from links */
+a {
+    text-decoration: none;
+}
+
+
+/* ==========================================
+   NAVIGATION BAR
+========================================== */
+
+header {
+    background-color: #34495E;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Website logo */
+.logo {
+    color: #F7F5F0;
+    font-size: 28px;
+}
+
+.logo span {
+    color: #A3B18A;
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex;
+    gap: 22px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #F7F5F0;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #A3B18A;
+}
+
+
+/* ==========================================
+   HOME SECTION
+========================================== */
+
+.home-section {
+    min-height: 90vh;
+    padding: 60px 8%;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #F7F5F0;
+}
+
+.home-container {
+    max-width: 1150px;
+    width: 100%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 55px;
+}
+
+/* LEFT SIDE INFORMATION */
+.home-content {
+    flex: 1;
+}
+
+.welcome {
+    color: #71846A;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.home-content h3 {
+    color: #71846A;
+    font-size: 23px;
+    margin-bottom: 18px;
+}
+
+.intro {
+    color: #58645F;
+    margin-bottom: 22px;
+}
+
+.quick-info {
+    margin-bottom: 25px;
+}
+
+.quick-info p {
+    margin-bottom: 8px;
+}
+
+
+/* RIGHT SIDE PROFILE IMAGE */
+.profile-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image img {
+    width: 100%;
+    max-width: 360px;
+    height: 440px;
+
+    object-fit: cover;
+
+    border: 6px solid #34495E;
+    border-radius: 15px;
+}
+
+
+/* ==========================================
+   BUTTON DESIGN
+========================================== */
+
+.main-button,
+.outline-button {
+    display: inline-block;
+
+    padding: 12px 25px;
+    margin-right: 10px;
+
+    border-radius: 6px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+/* Main button */
+.main-button {
+    background-color: #34495E;
+    color: #F7F5F0;
+}
+
+.main-button:hover {
+    background-color: #A3B18A;
+    color: #34495E;
+}
+
+/* Secondary button */
+.outline-button {
+    border: 2px solid #34495E;
+    color: #34495E;
+}
+
+.outline-button:hover {
+    background-color: #34495E;
+    color: #F7F5F0;
+}
+
+
+/* ==========================================
+   GENERAL CONTENT SECTIONS
+========================================== */
+
+.content-section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 75px 35px;
+}
+
+.content-section p {
+    color: #58645F;
+}
+
+
+/* ==========================================
+   PROFESSIONAL SKILLS
+========================================== */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #E9EDE6;
+    padding: 25px;
+
+    border-left: 5px solid #A3B18A;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(52, 73, 94, 0.12);
+}
+
+.skill-card h3 {
+    color: #34495E;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   EXPERIENCE AND EDUCATION
+========================================== */
+
+.resume-card {
+    background-color: #E9EDE6;
+    padding: 25px;
+
+    border-left: 5px solid #A3B18A;
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+}
+
+.resume-card h3 {
+    color: #34495E;
+    margin-bottom: 12px;
+}
+
+.resume-card ul {
+    padding-left: 25px;
+    margin-top: 12px;
+}
+
+.resume-card li {
+    margin-bottom: 8px;
+}
+
+.date {
+    color: #71846A;
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   CONTACT SECTION
+========================================== */
+
+.contact-card {
+    background-color: #E9EDE6;
+    padding: 30px;
+
+    border-left: 5px solid #A3B18A;
+    border-radius: 8px;
+}
+
+.contact-card p {
+    margin-bottom: 12px;
+}
+
+.contact-card a {
+    color: #34495E;
+    font-weight: bold;
+}
+
+.contact-card a:hover {
+    color: #71846A;
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+    background-color: #34495E;
+    color: #F7F5F0;
+
+    text-align: center;
+    padding: 25px;
+    font-size: 13px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* ==========================================
+   TABLET RESPONSIVE DESIGN
+========================================== */
+
+@media screen and (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .home-container {
+        gap: 30px;
+    }
+
+    .profile-image img {
+        height: 350px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE PHONE RESPONSIVE DESIGN
+========================================== */
+
+@media screen and (max-width: 600px) {
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 10px 14px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .home-section {
+        padding: 45px 20px;
+    }
+
+    /* Stack profile image and information */
+    .home-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .profile-image img {
+        max-width: 260px;
+        height: 310px;
+    }
+
+    .home-content h1 {
+        font-size: 28px !important;
+    }
+
+    .home-content h3 {
+        font-size: 19px;
+    }
+
+    .intro {
+        font-size: 14px;
+    }
+
+    .main-button,
+    .outline-button {
+        margin: 5px;
+        padding: 10px 17px;
+        font-size: 13px;
+    }
+
+    .content-section {
+        padding: 50px 20px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        padding: 20px;
+        overflow-wrap: anywhere;
+    }
+
+}
